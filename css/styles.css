@@ -13,9 +13,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
   color: var(--descr-color);
+  background-color: var(--bgd-color);
 }
+
+/* глобальні стилі */
 
 .list {
   list-style: none;
@@ -37,6 +39,22 @@ body {
   padding-left: 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
 /* header */
 
 .top-line {
@@ -132,14 +150,6 @@ body {
   background-color: var(--footer-color);
 }
 
-.hero-style {
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 1600px; */
-  background-color: var(--hero-bgd-style-color);
-  background-image: url(../img/hero-bgd-img.jpg);
-}
-
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -181,20 +191,16 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  visibility: hidden;
 }
 
 .speciality-menu {
   display: flex;
-}
-
-.speciality-item:not(:first-child) {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .speciality-title {
@@ -224,51 +230,28 @@ body {
 
 .practice-menu {
   display: flex;
-}
-
-.practice-item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.practice-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+  gap: 30px;
 }
 
 .practice-img {
   display: block;
 }
 
-/* team */
+/* команда */
 
 .team {
   background-color: var(--team-bgd-color);
 }
 
-.team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
-
 .team-menu {
   display: flex;
+  gap: 30px;
+}
+.descr-conteiner {
+  padding: 30px 32px;
 }
 
 .person-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -278,10 +261,6 @@ body {
 }
 
 .person-descr {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
@@ -292,14 +271,11 @@ body {
 
 .team-card {
   text-align: center;
+  width: 270px;
   background-color: var(--bgd-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-card:not(:first-child) {
-  margin-left: 30px;
 }
 
 /* footer */
@@ -328,8 +304,6 @@ body {
 
 .footer-adress {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -338,8 +312,6 @@ body {
 
 .footer-contact {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
@@ -369,9 +341,10 @@ body {
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
+  visibility: hidden;
 }
 
-.title {
+.title-filter {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -385,8 +358,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.filter-item:not(:first-child) {
-  margin-left: 8px;
+.filter-menu {
+  gap: 8px;
 }
 
 .filter-menu :hover,
@@ -401,30 +374,26 @@ body {
 .top-menu {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 
 .item-top {
   list-style: none;
-  margin: 15px;
+  width: 370px;
 }
 
 .project-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .project-descr {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .item-img {
@@ -432,6 +401,8 @@ body {
 }
 
 .item-top-descr {
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 24px 20px;
 }
