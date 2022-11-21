@@ -118,17 +118,17 @@ p {
 .contact-menu {
   display: flex;
   margin-left: auto;
-  gap: 50px;
+  column-gap: 50px;
 }
 
-.contact-menu :hover,
-.contact-menu :focus {
+.contacts-title:hover,
+.contacts-title:focus {
   color: var(--akcent-color);
 }
 
-.contacts:hover,
-.contacts:focus {
-  color: var(--akcent-color);
+.contacts-title:hover .icon-contacts,
+.contacts-title:focus .icon-contacts {
+  fill: var(--akcent-color);
 }
 
 .contacts-title {
@@ -146,12 +146,6 @@ p {
   fill: var(--descr-color);
   margin-right: 10px;
 }
-
-.icon-contacts:hover,
-.icon-contacts:focus {
-  fill: var(--akcent-color);
-}
-
 /* герой */
 
 .hero {
@@ -335,13 +329,13 @@ p {
   background-color: var(--akcent-color);
 }
 
-.team-link {
-  fill: #afb1b8;
+.link-item:hover .team-link,
+.link-item:focus .team-link {
+  fill: var(--bgd-color);
 }
 
-.team-link:hover,
-.team-link:focus {
-  fill: var(--bgd-color);
+.team-link {
+  fill: #afb1b8;
 }
 
 /* клієнти */
@@ -370,8 +364,8 @@ p {
   fill: var(--akcent-color);
 }
 
-.icon-client:hover,
-.icon-client:focus {
+.client-active:hover .icon-client,
+.client-active:focus .icon-client {
   fill: var(--akcent-color);
 }
 
