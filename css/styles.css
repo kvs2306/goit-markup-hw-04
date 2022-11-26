@@ -78,7 +78,6 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  outline: transparent;
 }
 
 .logo-stile {
@@ -92,7 +91,6 @@ p {
 .navigation :hover,
 .navigation :focus {
   color: var(--akcent-color);
-  outline: transparent;
 }
 
 .nav-menu {
@@ -126,13 +124,11 @@ p {
 .contacts-title:hover,
 .contacts-title:focus {
   color: var(--akcent-color);
-  outline: transparent;
 }
 
 .contacts-title:hover .icon-contacts,
 .contacts-title:focus .icon-contacts {
   fill: var(--akcent-color);
-  outline: transparent;
 }
 
 .contacts-title {
@@ -206,7 +202,6 @@ p {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-active-color);
-  outline: transparent;
 }
 
 /*особливості*/
@@ -414,7 +409,6 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--bgd-color);
-  outline: transparent;
 }
 
 .style-logo-footer {
@@ -444,7 +438,6 @@ p {
 .footer-item :hover,
 .footer-item :focus {
   color: var(--akcent-color);
-  outline: transparent;
 }
 
 .footer-social-links {
@@ -557,6 +550,7 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--descr-color);
 }
 
 .top-link {
